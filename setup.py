@@ -1,8 +1,8 @@
 from distutils.core import setup
 setup(
   name = 'yomo-py-common',
-  packages = ['yomo-py-common'],
-  version = '0.1',
+  packages = ['yomoPyCommon'],
+  version = '0.0.1',
   license='MIT',
   description = 'Define some common function for easy use',
   author = 'Chunhua Zhang',

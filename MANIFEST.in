@@ -1,0 +1,3 @@
+include README.org LICENSE setup.py
+recursive-include yomoPyCommon/db *.py
+recursive-include yomoPyCommon/message *.py

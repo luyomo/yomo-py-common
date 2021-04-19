@@ -1,3 +1,6 @@
 include README.org LICENSE setup.py
-recursive-include yomoPyCommon/db *.py
-recursive-include yomoPyCommon/message *.py
+include yomoPyCommon/db
+include yomoPyCommon/db/PGBase.py
+include yomoPyCommon/db/MongoData.py
+include yomoPyCommon/message
+include yomoPyCommon/message/wechat.py

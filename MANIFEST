@@ -4,7 +4,10 @@ README
 README.org
 setup.cfg
 setup.py
+yomoPyCommon/MongoData.py
+yomoPyCommon/PGBase.py
 yomoPyCommon/__init__.py
+yomoPyCommon/wechat.py
 yomoPyCommon/db/MongoData.py
 yomoPyCommon/db/PGBase.py
 yomoPyCommon/db/__init__.py

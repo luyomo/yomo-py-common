@@ -1,5 +1,6 @@
 import psycopg2
 import psycopg2.extras
+from psycopg2.extras import Json
 import json
 import pandas.io.sql as sqlio
 
@@ -33,6 +34,15 @@ class PGBase():
     def fetchDataFrame(self, _query):
         try:
             return sqlio.read_sql_query(_query, self.dbconn)
+        except Exception as e:
+            print(f"Failed to run query {e}")
+            return None
+
+    def fetchiDataJson(self, _query):
+        try:
+            __cursor = self.dbconn.cursor(cursor_factory=psycopg2.extras.DictCursor)
+            __cursor.execute(_query)
+            return __cursor.fetchall()
         except Exception as e:
             print(f"Failed to run query {e}")
             return None

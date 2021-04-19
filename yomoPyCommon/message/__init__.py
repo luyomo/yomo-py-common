@@ -1,1 +1,1 @@
- from message          import wechat
+from yomoPyCommon.message          import wechat

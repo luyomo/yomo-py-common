@@ -1,3 +1,5 @@
-from db               import MongoData
-from db               import PGBase
-from message          import wechat
+from yomoPyCommon.db               import PGBase
+from yomoPyCommon.db               import MongoData
+from yomoPyCommon.message          import wechat
+
+__all__ = ['db', 'message']

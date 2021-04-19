@@ -1,2 +1,2 @@
- from db               import MongoData
- from db               import PGBase
+from yomoPyCommon.db               import MongoData
+from yomoPyCommon.db               import PGBase
